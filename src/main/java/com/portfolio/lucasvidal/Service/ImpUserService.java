@@ -31,13 +31,13 @@ public class ImpUserService implements IUserService{
     }
 
     @Override
-    public void deleteUser(String user) {
-        iUserRepository.deleteById(user);
+    public void deleteUserByUsername(String username) {
+        iUserRepository.deleteById(username);
     }
 
     @Override
-    public Users findUser(String user) {
-        Users users = iUserRepository.findById(user).orElse(null);
+    public Users findUserByUsername(String username) {
+        Users users = iUserRepository.findById(username).orElse(null);
         return users;
     }
 

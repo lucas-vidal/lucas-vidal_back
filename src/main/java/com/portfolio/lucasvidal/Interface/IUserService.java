@@ -19,10 +19,10 @@ public interface IUserService {
     public void saveUser(Users users);
     
     //Eliminar usuario
-    public void deleteUser(String user);
+    public void deleteUserByUsername(String username);
     
     //Buscar un usuario por ID
-    public Users findUser(String user);
+    public Users findUserByUsername(String username);
 
 
 }

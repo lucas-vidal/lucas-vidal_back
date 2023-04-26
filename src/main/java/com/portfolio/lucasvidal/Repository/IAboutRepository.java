@@ -4,7 +4,7 @@
  */
 package com.portfolio.lucasvidal.Repository;
 
-import com.portfolio.lucasvidal.Entity.Users;
+import com.portfolio.lucasvidal.Entity.About;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -12,8 +12,7 @@ import org.springframework.stereotype.Repository;
  *
  * @author lucas
  */
-
 @Repository
-public interface IUserRepository extends JpaRepository<Users, String>{
+public interface IAboutRepository extends JpaRepository<About, Integer> {
  
 }

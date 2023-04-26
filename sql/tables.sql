@@ -9,7 +9,7 @@ CREATE TABLE users (
 );
 
 CREATE TABLE about (
-  id INT PRIMARY KEY,
+  id INT PRIMARY KEY AUTO_INCREMENT,
   about TEXT
 );
 
