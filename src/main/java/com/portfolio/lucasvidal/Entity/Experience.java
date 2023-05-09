@@ -33,6 +33,9 @@ public class Experience {
     @NotNull
     private String description;
     
+    @Size(max = 50, message = "no cumple la longitud")
+    private String img; 
+    
     @Size(max = 100)
     private String link;
 

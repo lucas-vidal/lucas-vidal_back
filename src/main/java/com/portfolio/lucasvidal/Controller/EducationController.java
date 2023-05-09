@@ -9,6 +9,7 @@ import com.portfolio.lucasvidal.Interface.IEducationService;
 import java.time.LocalDate;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,6 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lucas
  */
     @RestController
+    @CrossOrigin(origins = {"http://localhost:4200", "https://lucas-vidal-ap.web.app"})
     public class EducationController {
         @Autowired IEducationService iEducationService;
 
@@ -59,6 +61,7 @@ import org.springframework.web.bind.annotation.RestController;
                                                      @RequestParam("certificate") String newCertificate,
                                                      @RequestParam("form") LocalDate newForm,
                                                      @RequestParam("until") LocalDate newUntil,
+                                                     @RequestParam("state") String newState,
                                                      @RequestParam("link") String newLink){
                         Education education = iEducationService.findEducationById(id);
 
@@ -85,6 +88,7 @@ import org.springframework.web.bind.annotation.RestController;
                            education.setCertificate(updatedEducation.getCertificate());
                            education.setForm(updatedEducation.getForm());
                            education.setUntil(updatedEducation.getUntil());
+                           education.setState(updatedEducation.getState());
                            education.setLink(updatedEducation.getLink());
 
                            iEducationService.saveEducation(education);

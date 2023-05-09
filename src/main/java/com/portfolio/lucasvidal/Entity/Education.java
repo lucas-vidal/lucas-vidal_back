@@ -30,6 +30,9 @@ public class Education {
     
     private LocalDate until;
     
+    @NotNull
+    private String state;
+    
     @Size(max = 100)
     private String link;
 

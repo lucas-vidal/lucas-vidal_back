@@ -8,6 +8,7 @@ import com.portfolio.lucasvidal.Entity.Projects;
 import com.portfolio.lucasvidal.Interface.IProjectsService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +23,8 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lucas
  */
     @RestController
+    @CrossOrigin(origins = {"http://localhost:4200", "https://lucas-vidal-ap.web.app"})
+    
     public class ProjectsController {
     @Autowired IProjectsService iProjectsService;
 
@@ -56,13 +59,15 @@ import org.springframework.web.bind.annotation.RestController;
             public Projects updateProjectsUrl(@PathVariable Integer id,
                                                   @RequestParam("title") String newTitle,
                                                   @RequestParam("description") String newDescription,
-                                                  @RequestParam("link") String newLink){
+                                                  @RequestParam("link") String newLink,
+                                                  @RequestParam("img") String newImg){
                 Projects projects = iProjectsService.findProjectById(id);
 
                         projects.setTitle(newTitle); 
                         projects.setDescription(newDescription); 
                         projects.setLink(newLink); 
-
+                        projects.setImg(newImg);
+                        
                         iProjectsService.saveProject(projects);
                         return projects;
 
@@ -78,6 +83,7 @@ import org.springframework.web.bind.annotation.RestController;
                 projects.setTitle(updatedProjectss.getTitle());
                 projects.setDescription(updatedProjectss.getDescription());
                 projects.setLink(updatedProjectss.getLink());
+                projects.setImg(updatedProjectss.getImg());
 
 
                 iProjectsService.saveProject(projects);

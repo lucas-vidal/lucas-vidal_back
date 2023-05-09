@@ -1,15 +1,11 @@
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Entity\Skills.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Service\ImpExperienceService.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Service\ImpSkillsService.java
-C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Controller\AboutController.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Repository\IExperienceRepository.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Interface\IProjectsService.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Repository\IUserRepository.java
-C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Entity\About.java
-C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Interface\IAboutService.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Interface\IExperienceService.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Repository\IEducationRepository.java
-C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Repository\IAboutRepository.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Service\ImpEducationService.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Service\ImpUserService.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Repository\IProjectsRepository.java
@@ -19,7 +15,6 @@ C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\ja
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Interface\IEducationService.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Interface\ISkillsService.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Interface\IUserService.java
-C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Service\ImpAboutService.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Controller\ExperienceController.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Repository\ISkillsRepository.java
 C:\Users\lucas\Documents\Proyectos Soft\lucas-vidal\lucas-vidal_back\src\main\java\com\portfolio\lucasvidal\Entity\Experience.java

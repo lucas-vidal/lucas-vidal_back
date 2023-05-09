@@ -9,6 +9,7 @@ import com.portfolio.lucasvidal.Interface.IExperienceService;
 import java.time.LocalDate;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,7 +23,8 @@ import org.springframework.web.bind.annotation.RestController;
  *
  * @author lucas
  */
-    @RestController
+@RestController
+@CrossOrigin(origins = {"http://localhost:4200", "https://lucas-vidal-ap.web.app"})
 public class ExperienceController {
     
     @Autowired IExperienceService iExperienceService;
@@ -61,6 +63,7 @@ public class ExperienceController {
                                                   @RequestParam("form") LocalDate newForm,
                                                   @RequestParam("until") LocalDate newUntil,
                                                   @RequestParam("description") String newDescription,
+                                                  @RequestParam("img") String newImg,
                                                   @RequestParam("link") String newLink){
                 Experience experience = iExperienceService.findExperienceById(id);
 
@@ -68,9 +71,10 @@ public class ExperienceController {
                         experience.setCompany(newCompany); 
                         experience.setForm(newForm); 
                         experience.setUntil(newUntil); 
-                        experience.setDescription(newDescription); 
+                        experience.setDescription(newDescription);
+                        experience.setImg(newImg);
                         experience.setLink(newLink); 
-
+                        
                         iExperienceService.saveExperience(experience);
                         return experience;
 
@@ -88,6 +92,7 @@ public class ExperienceController {
                 experience.setForm(updatedExperiences.getForm());
                 experience.setUntil(updatedExperiences.getUntil());
                 experience.setDescription(updatedExperiences.getDescription());
+                experience.setImg(updatedExperiences.getImg());
                 experience.setLink(updatedExperiences.getLink());
 
 
