@@ -31,6 +31,7 @@ public class Education {
     private LocalDate until;
     
     @NotNull
+    @Size(max = 50)
     private String state;
     
     @Size(max = 100)

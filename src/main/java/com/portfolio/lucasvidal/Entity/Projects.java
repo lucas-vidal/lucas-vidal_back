@@ -28,6 +28,7 @@ public class Projects {
     @Size(max = 100)
     private String link;
     
-    @Size(max = 50, message = "no cumple la longitud")
+    @NotNull
+    @Size(max = 200)
     private String img; 
 }
