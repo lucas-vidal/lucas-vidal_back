@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author lucas
  */
 @RestController
-@CrossOrigin(origins = {"http://localhost:4200", "https://lucas-vidal-ap.web.app"})
+@CrossOrigin(origins = {"http://localhost:4200/", "https://lucas-vidal-ap.web.app"})
 
 public class UserController {
     @Autowired IUserService iUserService;
@@ -56,7 +56,7 @@ public class UserController {
     
     /* Actualiza Usuario por URL */   
     @PutMapping("/users1/{username}")
-    public Users updateUser(@PathVariable String username,
+    public Users updateUserURL(@PathVariable String username,
                             @RequestParam("password") String newPassword,
                             @RequestParam("name") String newName,
                             @RequestParam("surname") String newSurname,
