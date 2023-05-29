@@ -33,10 +33,10 @@ public class Experience {
     @NotNull
     private String description;
     
-    @Size(max = 50, message = "no cumple la longitud")
+    @Size(max = 255, message = "no cumple la longitud")
     private String img; 
     
-    @Size(max = 100)
+    @Size(max = 255)
     private String link;
 
 

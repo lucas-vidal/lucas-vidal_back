@@ -60,7 +60,7 @@ import org.springframework.web.bind.annotation.RestController;
                                                      @RequestParam("institute") String newInstitute,
                                                      @RequestParam("certificate") String newCertificate,
                                                      @RequestParam("form") LocalDate newForm,
-                                                     @RequestParam("until") LocalDate newUntil,
+                                                     @RequestParam("untils") LocalDate newUntil,
                                                      @RequestParam("state") String newState,
                                                      @RequestParam("link") String newLink){
                         Education education = iEducationService.findEducationById(id);
@@ -69,6 +69,7 @@ import org.springframework.web.bind.annotation.RestController;
                                 education.setCertificate(newCertificate);
                                 education.setForm(newForm);
                                 education.setUntil(newUntil); 
+                                education.setState(newState); 
                                 education.setLink(newLink);
 
                                 iEducationService.saveEducation(education);

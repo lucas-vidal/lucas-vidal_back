@@ -70,6 +70,6 @@ public class Users {
    private String about;
    
    @NotNull
-   @Size( max = 200, message = "no cumple la longitud")
+   @Size(max = 255, message = "no cumple la longitud")
    private String img; 
 }
